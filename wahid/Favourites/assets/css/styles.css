@@ -87,6 +87,7 @@ body {
 }
 .fg_yellow-s{
     color: yellow;
+    font-size: 10px;
 }
 .rating_text{
     color: white;
