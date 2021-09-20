@@ -1,0 +1,163 @@
+
+/* Generic  */
+
+
+
+
+.f_color_orange-s{
+    color: orange;
+}
+.f_weight_300-s{
+    font-weight: 300;
+}
+.br_20px-s{
+    border-radius: 20px;
+}
+.h_16px-s{
+    height: 16px;
+}
+.bg_green-s{
+    background-color: rgb(0, 100, 0);
+}
+.w_54px-s{
+    width: 54px;
+}
+.clr_green-s{
+    color: rgb(0, 100, 0);
+}
+.f_weight_600-s{
+    font-weight: 600;
+}
+.f_weight_700-s{
+    font-weight: 700;
+}
+.fs_20px-s{
+    font-size: 20px;
+    font-weight: 600;
+}
+.font_lato-s{
+    font-family: 'Lato', sans-serif !important;
+}
+.card_bg_green-s{
+    background-color: rgb(0, 100, 0);
+}
+.fs_heart_30px-s{
+    font-size: 30px;
+}
+.br_10px-s{
+    border-radius: 10px;
+}
+.shadow-s{
+    box-shadow: 0 .3rem 0.3rem rgb(31, 31, 31) !important;
+}
+.fs_11px-s{
+    font-size: 11px;
+}
+.opacity_50-s{
+    opacity: 50%;
+}
+.f_color_yellow-s{
+    color: yellow;
+}
+.fw_400-s{
+    font-weight: 400;
+}
+.fs_16px-s{
+    font-size: 16px;
+}
+.fs_12px-s{
+    font-size: 12px;
+}
+.color_green-s{
+    color: rgb(0, 100, 0);
+}
+.clr_black-s{
+    color: black;
+}
+.font_roboto-s{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+/* Specific */
+
+
+.b_top_botom_10px-s{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.container_bg-clr{
+    background-color:rgb(229, 238, 231);
+}
+.heart_icon-s{
+    color: rgb(0, 100, 0);
+}
+.heart_icon_default-s{
+    color: grey;
+}
+.heart_icon_active-s{
+    color: rgb(0, 100, 0);
+}
+.aligning-s{
+    left: -15px;
+    top: 30px
+}
+.hr_margin_bottom-s{
+    border-bottom: 1px solid white;
+}
+.card_decline_btn-s:hover{
+    color: black;
+    
+}
+.card_decline_btn-s{
+    background-color: rgb(229, 238, 231);
+}
+.card_accept_btn-s:hover{
+    color: black;
+}
+.b_50-s{
+    border-radius: 50%;
+}
+.b_clr_green-s{
+    border: 3px solid rgb(0, 100, 0);
+}
+.invitaion_btn-s{
+    border: 2px solid rgb(0, 100, 0);
+    color: black;
+    border-radius: 10px;
+    width: 216px;
+    height: 63px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.hire_players_btn-s{
+    border: 2px;
+    color: rgb(210, 225, 213);
+    border-radius: 10px;
+    width: 216px;
+    height: 63px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.hire_players_btn-s:hover{
+    border: 2px solid rgb(0, 100, 0);
+    color: black;
+}
+
+
+
+
+/* Library */
+
+
+
+
+.fa-heart{
+    background-color: white;
+    border-radius: 50%;
+    padding: 1rem;
+}
