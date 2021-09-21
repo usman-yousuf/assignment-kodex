@@ -1,0 +1,11 @@
+
+/* Alert Styling */
+.myAlert_top-s{
+    position: fixed;
+    top: 5px; 
+    left:2%;
+    width: 95%;
+}
+.alert-s{
+    display: none;
+}
