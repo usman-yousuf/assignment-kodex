@@ -17,12 +17,7 @@
 //   document.getElementById('slider_div-d').scrollLeft -= 1250;
 // };
 
-    // //on document load
-    $(function() {
     
-        document.getElementById('scroll_left_toggler-d').style.display = 'none';
-    });
-
     // function myScrollFunc(id) {
     //     debugger;
         
@@ -35,6 +30,15 @@
     //             document.getElementById('scroll_left_toggler-d').style.display = 'none';
     //         }
     // };
+
+
+
+
+    // //on document load
+    $(function() {
+    
+        document.getElementById('scroll_left_toggler-d').style.display = 'none';
+    });
 
 
 
@@ -52,6 +56,10 @@
               var content = document.getElementById('slider_div-d');
               var step = content.scrollLeft += 1250;
               document.getElementById('scroll_left_toggler-d').style.display = "block";  
+
+              if(content == 0){
+                document.getElementById('scroll_left_toggler-d').style.display = "none";
+              }
           }
       }
       
@@ -66,6 +74,10 @@
           function scrollLeft() {
               document.getElementById('slider_div-d').scrollLeft -= 1250;
               document.getElementById('scroll_right_toggler-dd').style.display = "block";
+
+              if(scrollLeft < 1250){
+                document.getElementById('scroll_right_toggler-dd').style.display = "none";
+              }
           }
       }
 

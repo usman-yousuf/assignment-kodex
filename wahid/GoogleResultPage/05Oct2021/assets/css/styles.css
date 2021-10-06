@@ -93,6 +93,12 @@
 .fs_14px-s{
     font-size: 14px;
 }
+.fs_12px-s{
+    font-size: 12px;
+}
+.fs_11px-s{
+    font-size: 11px;
+}
 .fs_16px-s{
     font-size: 16px;
 }
@@ -249,9 +255,26 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+    overflow: hidden;
+    
 }
 .box_shadow-s:hover{
     box-shadow:  darkgray;
+}
+.mb_48px-s{
+    margin-bottom: 48px;
+}
+.max_w_fit_content-s{
+    max-width:fit-content;
+}
+.h_222px-s{
+    height: 222px;
+}
+.min_w-201px-s{
+    min-width: auto;
+}
+.max_w_300px-s{
+    max-width: auto;
 }
 
 
