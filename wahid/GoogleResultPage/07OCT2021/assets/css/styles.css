@@ -16,6 +16,13 @@
 .search_input_b-s{
     outline: none !important;
     border: none;
+
+}
+.search_input_b-s:focus{
+    outline: none !important;
+    border: none;
+    box-shadow: none;
+
 }
 .search_box-s{
     width: 97%;
@@ -147,6 +154,11 @@
 .h_50px-s{
     height: 50px;
 }
+input [type="text"]:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
 .s_contain-s{
     
     width: 100%; /* or any custom size */
@@ -270,11 +282,61 @@
 .h_222px-s{
     height: 222px;
 }
-.min_w-201px-s{
+/* .min_w-201px-s{
     min-width: auto;
-}
+} */
 .max_w_300px-s{
-    max-width: auto;
+    max-width: 347px;
+}
+.bg_dark-s{
+    background-color:  rgb(20, 21, 24);
+}
+.bg_black-s{
+    background-color: black;
+}
+.w_540px-s{
+    width: 520px;
+}
+.max_h_360px-s{
+    max-height: 360px;
+}
+.bg_sky_blue-s{
+    background-color: rgb(66, 133, 244);
+}
+.visit_btn-s:hover{
+    text-decoration: underline;
+}
+.fw_800-s{
+    font-weight: 800;
+}
+.fs_40px-s{
+    font-size: 40px;
+}
+.position_absolute_cross-s{
+    position: absolute;
+    top: 10px;
+    left: 25px;
+}
+
+.position_absolute_right-s {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.position_absolute_left-s{
+    position: absolute;
+    top: 10px;
+    right: 50px;
+}
+.position_absolute_dots-s{
+    position: absolute;
+    top: 10px;
+    right: 75px;
+}
+.mystyle{
+    border: 1px solid rgb(64, 129, 237);
+    background-color: rgb(232, 240, 254);
+    border-radius: 0.5em;
 }
 
 
@@ -303,6 +365,7 @@ a{
 .active{
     color: red;
 }
+
 
 
 
