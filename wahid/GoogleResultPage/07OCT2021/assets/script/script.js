@@ -39,7 +39,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // //on document load
     $(function () {
 
-        document.getElementById('scroll_left_toggler-d').style.display = 'none';
+      var hidden =  document.getElementById('scroll_left_toggler-d');
+      hidden.style.display = 'none'
     });
 
 
@@ -54,9 +55,12 @@ document.addEventListener('DOMContentLoaded', function () {
         /**
          * scroll content to left
          */
+
+
         function scrolRight() {
             var content = document.getElementById('slider_div-d');
             var step = content.scrollLeft += 850;
+
             document.getElementById('scroll_left_toggler-d').style.display = "block";
 
             if (content == 0) {
@@ -108,12 +112,21 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     function addBorder() {
-        let elm = this;
-        // console.log(elm)
-        elm.getElementsByClassName("card")[0].classList.add("mystyle");
-        elm.getElementsByTagName("card")[0].classList.add("mystyle");
-        elm.getElementsByTagName("card")[0].classList.add("mystyle");
+        var removeBorder = document.getElementsByClassName("add_border-d");
+        Array.from(removeBorder).forEach(element => {
+            // debugger;
+            if (element.classList.contains("mystyle")) {
+                element.classList.remove("mystyle");
+            }
 
+        });
+        let elm = this.getElementsByClassName("add_border-d");
+        // console.log(elm)
+        Array.from(elm).forEach(element => {
+            element.classList.add("mystyle");
+
+
+        });
     }
 
     // CROSS CLICK
@@ -147,62 +160,79 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
-
-
-
-
-
-
     var fetch = document.getElementsByClassName("img_click_sidepanel-d");
     Array.from(fetch).forEach(element => {
-        element.addEventListener("click", fetchDetails);
-        element.addEventListener("click", showLink);
-        element.addEventListener("click", showName);
+        // element.addEventListener("click", fetchDetails);
+        element.addEventListener("click", showContent);
+        // element.addEventListener("click", showName);
     });
 
-    // Show Image on click in Side Panel 
+    // // Show Image on click in Side Panel 
 
-    function fetchDetails() {
-        // debugger;
-        let elmen = this;
-        let getValue = document.getElementById('hidden_col-d');
+    // function fetchDetails() {
+    //     // debugger;
+    //     let elmen = this;
+    //     let getValue = document.getElementById('hidden_col-d');
 
-        getValue.getElementsByTagName('img')[0].src =
-            elmen.getElementsByTagName("img")[0].src;
+    //     getValue.getElementsByTagName('img')[0].src =
+    //         elmen.getElementsByTagName("img")[0].src;
 
-        return getValue.getElementsByTagName('img')[0].src;
+    //     return getValue.getElementsByTagName('img')[0].src;
 
-    }
+    // }
     // Show Link on click in Side Panel 
 
-    function showLink() {
+    function showContent() {
         // debugger;
-        let elmen = this;
-        let getValue = document.getElementById('hidden_col-d');
+        let name = this;
+        linkUrl = name.getElementsByClassName("link-d")[0].innerHTML;
+        myName = name.getElementsByClassName("name-d")[0].innerHTML;
+        imageUrl = name.getElementsByClassName("image-d")[0].src;
+        uniqueId = name.getAttribute("data-parent");
 
-        // var a = getValue.getElementsByTagName('a')[0].innerHTML;
-        getValue.getElementsByTagName('a')[0].innerHTML =
-            elmen.getElementsByTagName("a")[1].innerHTML;
+        // console.log(uniqueId);
 
-        return getValue.getElementsByTagName('a')[0].innerHTML;
-        // console.log(a);
+
+        let sidebarContainer = document.getElementById('hidden_col-d');
+        sidebarContainer.getElementsByClassName("links-d")[0].innerHTML = linkUrl;
+        sidebarContainer.getElementsByClassName("name-d")[0].innerHTML = myName;
+        sidebarContainer.getElementsByClassName("image-d")[0].src = imageUrl;
+        // sidebarContainer.getAttribute("data-parent");
+        var b = sidebarContainer.setAttribute("data-parent", uniqueId);
+        // console.log(b);
+
+
+        // Array.from(linkValue).forEach(element => {
+        // var getValue = element.innerHTML;
+        //    console.log(getValue);
+
+
+        // Array.from(a).forEach(element => {
+        //     var newValue = element.innerHTML;
+        //     // console.log(newValue);
+
+        //     newValue = getValue;
+        //      console.log(newValue);
+        //     return newValue; 
+        // });
+        // });
+
 
     }
     // Show Text on click in Side Panel 
 
-    function showName() {
-        // debugger;
-        let elmen = this;
-        let getValue = document.getElementById('hidden_col-d');
+    // function showName() {
+    //     // debugger;
+    //     let elmen = this;
+    //     let getValue = document.getElementById('hidden_col-d');
 
 
-        getValue.getElementsByTagName('a')[1].innerHTML =
-            elmen.getElementsByTagName("a")[0].innerHTML;
+    //     getValue.getElementsByTagName('a')[1].innerHTML =
+    //         elmen.getElementsByTagName("a")[0].innerHTML;
 
-        return getValue.getElementsByTagName('a')[1].innerHTML;
+    //     return getValue.getElementsByTagName('a')[1].innerHTML;
 
-    }
+    // }
 
 
 
@@ -222,22 +252,33 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
+    // Show Next Image
+
+    let nextImg = document.getElementById("next_image_toggle-d");
+    if(nextImg != null){
+        nextImg.addEventListener("click" , showNextImg);
+    }
+    
 
 
+    function showNextImg() {
+        // debugger;
+        let current = document.getElementById('hidden_col-d');
+        var currentImg = +current.getAttribute("data-parent");
+        // debugger;
+        // console.log(currentImg);
 
+        let numb = currentImg
+        
+        var myClass = "myId-" + numb;
+        // console.log(myClass);
+        // var myElm = document.getElementsByClassName(myClass)[0];
 
-
-
-
-
-
-
-
+        nextElement = "myId-" + (++numb);
+        // console.log(nextElement);
+        
+        var newElem = document.getElementsByClassName(nextElement)[0];
+        newElem.click();
+    }
 
 });
-
-
-
-
-
-

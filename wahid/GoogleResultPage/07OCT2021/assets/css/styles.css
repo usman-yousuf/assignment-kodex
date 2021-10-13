@@ -52,6 +52,11 @@
 
 /* Generic Styles */
 
+.active{
+    color: blue;
+    border-bottom: 3px solid red;
+}
+
 .more_links_hr-s{
     background-color: #dadce0;
     border: 0;
@@ -276,6 +281,9 @@ input [type="text"]:focus{
 .mb_48px-s{
     margin-bottom: 48px;
 }
+.w_min_content-s{
+    width: fit-content;
+}
 .max_w_fit_content-s{
     max-width:fit-content;
 }
@@ -316,28 +324,100 @@ input [type="text"]:focus{
     position: absolute;
     top: 10px;
     left: 25px;
+    color: rgb(103, 117, 125);
+}
+.position_absolute_cross-s:hover{
+    color: rgb(197, 197, 197);
 }
 
 .position_absolute_right-s {
     position: absolute;
     top: 10px;
     right: 20px;
+    color: rgb(103, 117, 125);
+}
+.position_absolute_right-s:hover{
+    color: rgb(197, 197, 197);
 }
 .position_absolute_left-s{
     position: absolute;
     top: 10px;
     right: 50px;
+    color: rgb(103, 117, 125);
 }
-.position_absolute_dots-s{
+.position_absolute_left-s:hover{
+    color: rgb(197, 197, 197);
+}
+/* .position_absolute_dots-s{
     position: absolute;
-    top: 10px;
+    bottom: 350px;
     right: 75px;
-}
+} */
 .mystyle{
     border: 1px solid rgb(64, 129, 237);
     background-color: rgb(232, 240, 254);
     border-radius: 0.5em;
 }
+.dropdown_toggle-s {
+    font: 400 1.5rem/1.25 sans-serif;
+    color: rgb(103, 117, 125);
+    background: transparent;
+    position: absolute;
+    top: -357px;
+    right: 60px;
+    border: none;
+    
+}
+.dropdown_toggle-s:hover{
+    background-color: transparent;
+    color: rgb(197, 197, 197);
+}
+/* .dropdown_toggle-s:focus{
+    background-color: transparent;
+    outline: none;
+    border: none;
+} */
+.dropdown_item-s:hover{
+    color: white;
+    background-color: rgb(102, 103, 104);
+    
+}
+.dropdown_item-s{
+    color:rgb(103, 117, 125);
+}
+.overflow_tooltip-s {
+    display: block;
+    width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+.w_238px-s{
+    width: 238px;
+}
+.w_186px-s{
+    width: 186px;
+}
+.w_167px-s{
+    width: 167px;
+}
+.w_318px-s {
+    width: 318px;
+}
+.w_315px-s {
+    width: 315px;
+}
+.w_320px-s {
+    width: 320px;
+}
+.position_sticky-s{
+    position: sticky;
+    height: 1000px;
+    top: 65px;
+    
+}
+
+
 
 
 
@@ -365,6 +445,12 @@ a{
 .active{
     color: red;
 }
+
+.dropdown-toggle::after {
+    display: none !important;
+    
+}
+
 
 
 
